@@ -2,12 +2,14 @@ package documento;
 
 public class Documento {
 	
+	private int id;
 	private Estado estado;
 	private boolean admin;
 	private int tempoPublicado;
 	private boolean revisao;
 	
-	public Documento() {
+	public Documento(int id) {
+		this.id = id;
 		this.estado = new Rascunho();
 		this.admin = false;
 		this.tempoPublicado = 0;
